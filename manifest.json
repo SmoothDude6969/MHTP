@@ -1,6 +1,6 @@
 {
-  "name": "PublicLurker-CG",
-  "version": "7.5.3",
+  "name": "MHTP",
+  "version": "1.0",
   "description": "MHTP - High Definition Texture Pack, along with the Lurker from DeadFish7 - CG version",
   "manifest_version": 3,
   "permissions": ["declarativeNetRequest", "scripting", "tabs"],
