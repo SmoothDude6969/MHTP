@@ -1,12 +1,33 @@
 {
   "name": "MHTP",
-  "version": "1.0",
+  "version": "1.0.2",
   "description": "MHTP - High Definition Texture Pack, along with the Lurker from DeadFish7 - CG version",
   "manifest_version": 3,
   "permissions": ["declarativeNetRequest", "scripting", "tabs"],
   "host_permissions": ["https://miniblox.online/*"],
-  "declarative_net_request": {"rule_resources": [{"id": "ruleset_1", "enabled": true, "path": "rules.json"}]},
-	"content_scripts": [{"matches": ["https://miniblox.online/*"], "all_frames": true, "js": ["content.js"] ["background.js"], "run_at": "document_start"}],
-	"icons": {"16": "Logo.png", "48": "Logo.png", "128": "Logo.png"}
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://miniblox.online/*"],
+      "all_frames": true,
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "Logo.png",
+    "48": "Logo.png",
+    "128": "Logo.png"
+  }
 }
-
