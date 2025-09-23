@@ -5,7 +5,7 @@
 	"condition": {
 		"urlFilter": "assets/index-*.js",
 		"resourceTypes": ["script"],
-		"initiatorDomains": ["miniblox.io"]
+		"initiatorDomains": ["miniblox.online"]
 	}
 }]
 
